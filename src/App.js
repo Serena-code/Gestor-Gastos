@@ -57,7 +57,7 @@ function App() {
   function handleSave(expense) {
     setItems((s) => [expense, ...s]);
   }
-  
+
   function handleDelete(id) {
     setItems((s) => s.filter((x) => x.id !== id));
   }
