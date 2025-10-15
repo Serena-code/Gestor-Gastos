@@ -57,11 +57,7 @@ function App() {
   function handleSave(expense) {
     setItems((s) => [expense, ...s]);
   }
-
-  function handleSetRowCurrency(id, displayCurrency) {
-    setItems((s) => s.map((it) => it.id === id ? { ...it, displayCurrency } : it));
-  }
-
+  
   function handleDelete(id) {
     setItems((s) => s.filter((x) => x.id !== id));
   }
